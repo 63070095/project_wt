@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/430d418ccdb960b07bb507fd1c12a4f3?family=Nasal" rel="stylesheet" type="text/css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap" rel="stylesheet">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <title>Document</title>
+
+</head>
+<style>
+    @font-face {
+    font-family: 'NasalizationRg-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NasalizationRg-Regular'), url('nasalization rg.woff') format('woff');
+    }
+    body{
+        padding-top: 10%;
+        background-color: black;
+        color: white;
+        font-family: "NasalizationRg-Regular", 'Questrial','Prompt';
+    }
+    img{
+        cursor: pointer;
+        max-width: 100%;
+        
+    }
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-family: 'Questrial',"Prompt";
+        word-spacing: 8px;
+    }
+    li{
+        font-family: 'Questrial';
+        font-size: 30px;
+    }
+    h3{
+        font-family: 'Questrial',"Prompt";
+        
+    }
+    h4{
+        font-family: 'Questrial',"Prompt";
+        font-size: 20px;
+    }
+    p{
+        font-size: 48px;
+    }
+   
+    mark{
+        color: #808083;
+        background-color: transparent;
+    }
+    hr{ 
+        color:white;
+        background-color:white;
+        margin-top: 2em;
+        margin-bottom: 2em; 
+    }
+    .btn1{
+        border-color: white;
+        border-radius: 50%;
+        border-width: 3px;
+        padding: 28px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(37,37,37,255);
+    }
+
+    .btn-yellow {
+            background-color: #f0c400;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding: 8px 28px;
+            text-align: center;
+            color: black;            
+            border-radius: 40px;
+            display: inline-block;
+            font-family: "Prompt";
+            font-size: 27px;
+    }
+    .btn-grad {
+            cursor: pointer;
+            background-image: linear-gradient(to right, #006bff 0%, #ae20ff  51%, #434eff  100%);
+            margin-top: 10px;
+            margin-bottom: 30px;
+            padding: 10px 110px;
+            text-align: center;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 40px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 30px;
+    }
+
+    .btn-grad:hover {
+        background-image: linear-gradient(to right, #0056cc 0%, #871bcc  51%, #3240cc  100%);
+        color: rgb(235, 229, 229);
+        text-decoration: none;
+    }
+    .center {
+        position: absolute;
+        padding-top: 4%;
+        text-align: center;
+    }
+    .left{
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+    .right{
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 55%;
+    }
+
+    /* modal image*/
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+
+    /* Add Animation */
+    .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+    }
+}
+</style>
+<body>
+    
+    <div class="container-fluid">
+    <div class="container pt-5" style="padding-bottom:3em;">
+        <div class="row">
+            <div class="col-sm-6" style="padding-top:40px;">
+                <img id="myImg" src="pic/2-Nighthawk.jpg" width="100%">
+            </div>
+            <div class="col-sm-6" style="padding-left:100px;">
+                <h1>NIGHTHAWK</h1>
+                <h2>THB 3,690</h2>
+                <hr>
+                <h3>สีกรอบแว่น</h3>
+                <button style="cursor: context-menu;" type="" class="btn btn1"></button>
+                <hr>
+                <h3>เลนส์</h3>
+                <button style="cursor: context-menu;" type="" class="btn btn-yellow">RetinaX Amber</button>
+                <hr>
+                <h3>ทวนออเดอร์เพื่อสั่งซื้อ:</h3><br/>
+                <h3>NIGHTHAWK / Black / RetinaX Amber <br/>/ ไม่มีค่าสายตา</h3><br/>
+                <h3>บริการจัดส่งทั่วประเทศไทยฟรี รวมภาษีมูลค่าเพิ่มแล้ว</h3><br/>
+                <a target="" class="btn-grad" href="https://www.messenger.com/t/1743481662536483/?messaging_source=source%3Apages%3Amessage_shortlink">ติดต่อพนักงานเพื่อสั่งซื้อ</a>  
+                <h3 style="font-size: 18px;">เรากำลังอยู่ในขั้นสุดท้ายของการพัฒนาระบบการจ่ายเงินเพื่อซื้ออัตโนมัติหน้าเว็บในขณะนี้ โปรดซื้อผ่านเจ้าหน้าที่ของเราผ่านทาง Facebook Messenger</h3>
+            </div>
+        </div>
+        <h1 style="text-align: center; font-size: 85px; padding-top:10%;">SPECIFICATION</h1>
+        <div class="row">
+            
+            <div class="col-sm-6" style="padding-top:5%;">
+                <hr>
+                <img style="margin-left:10%; cursor: context-menu;" src="pic/Products-Overall_Thai_nighthawk.png" width="80%">
+                <hr>
+                <h4>LENS TYPE<mark> / ประเภทเลนส์</mark></h4>
+                <h3><mark style="color:red">New!</mark> RetinaX Amber Lens</h3>
+                <h3><mark>เลนส์กรองแสงแอมเบอร์ รุ่นใหม่</mark></h3>
+                <hr>
+                <h4>WEIGHT (EXCLUDE LENS)<mark>  / น้ำหนัก (ไม่รวมเลนส์)</mark></h4>
+                <h3>12 Grams</h3>
+                <h3><mark>12 กรัม</mark></h3>
+                <hr>
+                <h4>LENS CURVATURE INDEX<mark>  / ค่าความโค้งเลนส์</mark></h4>
+                <h1 style="font-family: 'Questrial'; font-size: 100px;" >8</h1>
+            </div>
+            <div class="col-sm-6" style="padding-top:5%; padding-left:60px;">
+                <hr>
+                <h3 style="word-spacing: 3px; line-height: 1.5em;">Our most recent and finest design. A hybrid of gaming curved frame and lens engineered for gamers who seek to enhancee their gaming performance.</h3><br/>
+                <h3 style="line-height: 1.5em; padding-bottom: 10%;"><mark>แว่นที่ดีที่สุดของ Ophtus ในขณะนี้! ด้วยความลงตัวของกรอบโค้งแบบเกมมิ่ง และเลนส์กรองแสง แอมเบอร์รุ่นใหม่ที่ต้องการพัฒนาศักยภาพการเล่นเกมถึงขีดสุด</mark></h3>
+                <hr>
+                <h4>MATERIAL<mark> / วัสดุ</mark></h4>
+                <h3>Exalted Stainless Steel</h3>
+                <h3><mark>สแตนเลส สตีล เกรดดีเยี่ยม</mark></h3>
+                <hr>
+                <h4>DIMENSIONS<mark> / ขนาด</mark></h4>
+                <h3>138-17-130 Mm</h3>
+                <h3><mark>138-17-130 มม.</mark></h3>
+                <hr>
+                <h4>HEADPHONE COMPATIBILITY<mark> / การใช้งานกับหูฟังเกมมิ่ง</mark></h4>
+                <h3>Best</h3>
+                <h3><mark>ดีที่สุด</mark></h3>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="row" >
+        <img src="pic/Nighthawk_Cutting-edge-eyewear-for-hardcore-gamer.jpg" width="100%">
+        <div class="center">
+            <p>CUTTING-EDGE EYEWEAR FOR HARDCORE GAMER</p>
+            <h2 style="font-size: 35px;">This groundbreaking hybird of form and function is designed specifically<br/>
+                 for gamers who seek to enhance their gaming performance. The almost <br/>
+                 weightless frame and 5-layer coating lens allow you to ceaselessly <br/>conquer your even most unimaginable missions.</h2>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <iframe width="100%" height="75%" src="https://www.youtube.com/embed/AF6aGwwp4yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="row">
+        <img src="pic/word.png" width="100%">
+        <div class="left">
+            <img style="padding-bottom: 1em;" src="pic/Nighthawk_World’s-Slimmest-Temples_logo.png" width="18%">
+            <p>WORLD’s SLIMMEST TEMPLES</p>
+            <ul>
+                <li>Optimal comfort for long-hour wear</li>
+                <li>Low impact on temporal bone</li>
+                <li>Headphone compatibility</li>
+              </ul>  
+        </div>
+    </div>
+    <div class="row">
+        <img src="pic/CURVED.png" width="100%">
+        <div class="right">
+            <img style="padding-bottom: 1em;" src="pic/Nighthawk_Curved-Frame_logo.png" width="13%">
+            <p>CURVED FRAME</p>
+            <ul>
+                <li>Greater visibility</li>
+                <li>Intensive light protection from all angles</li>
+                <li>Guarantee of peripheral distortion-free</li>
+              </ul>  
+        </div>
+    </div>
+    <div class="row" style="color: black; background-color: white;">
+        <img src="pic/EXALTED.png" width="100%">
+        <div class="left">
+            <img style="padding-bottom: 1em;" src="pic/NH-EXALTED.png" width="15%">
+            <p>EXALTED STAINLESS STEEL</p>
+            <ul>
+                <li>Super high flexibility</li>
+                <li>Unbreakable structure</li>
+                <li>Sweat and oxidation resistance</li>
+              </ul>  
+        </div>
+    </div>
+    <div class="row">
+        <img src="pic/SMART.png" width="100%">
+        <div class="right">
+            <img style="padding-bottom: 1em;" src="pic/Nighthawk_Smart-Components_logo.png" width="15%">
+            <p>SMART COMPONENTS</p>
+            <ul>
+                <li>Screwless hinge for reassembling purpose</li>
+                <li>Intricated spring joint system</li>
+              </ul>  
+        </div>
+    </div>
+    
+        <div class="row" style="padding-top: 4em; padding-left: 20%; font-family: 'Questrial','Prompt'; line-height: 8em;" >
+            <h1>คำถามที่พบบ่อย</h1><br/>
+            <h2 style="line-height: 1.5em;">Q: เลนส์กรองทั่วไป ต่างจากเลนส์ที่มีเทคโนโลยี RetinaX อย่างไร<br/>
+                A: แว่นทุกรุ่นของ Ophtus ผลิตจากเทคโนโลยีเลนส์ RetinaX ช่วยกรองแสงได้อย่างเหมาะสม<br/>
+                เพราะตัวเลนส์อัจฉริยะจะช่วยปกป้องเต็มกำลังในช่วงคลื่นความถี่ที่เป็นอันตราย พร้อมละเว้นช่วง<br/>
+                คลื่นรังสี 455 nm ซึ่งเป็นแสงสีฟ้าที่มีประโยชน์ ช่วยในการมองเห็นภาพ ผลลัพธ์ที่ได้คือการถนอมสายตาอย่างแท้จริง!<br/><br/></h2>
+            
+            <h2 style="line-height: 1.5em;">Q: ตัดค่าสายตาใช้เวลากี่วัน<br/>
+                A: ใช้เวลา 7-10 วัน เพื่อพร้อมส่งให้ถึงบ้านคุณ เรามอบหมายให้เฉพาะผู้เชี่ยวชาญเป็นผู้ดำเนินการเท่านั้น<br/><br/></h2>
+            <h2 style="line-height: 1.5em;">Q: หากต้องการให้ Ophtus ช่วยประสานงานกับศูนย์จักษุใกล้บ้าน จะมีค่าใช้จ่ายเพิ่มเติมหรือไม่<br/>
+                A: ฟรี ไม่มีค่าใช้จ่าย ทางเรายินดีประสานงาน และให้ข้อมูลสถานที่ตรวจวัดสายตาใกล้บ้านคุณ พร้อมแจ้งส่วนลด<br/>
+                โปรโมชั่นสำหรับสาขาที่เข้าร่วม<br/><br/></h2>
+            <h2 style="line-height: 1.5em;">Q: ส่งสินค้าถึงบ้านด้วย DHL มีค่าใช้จ่ายเพิ่มเติมหรือไม่<br/>
+                A: ส่งด่วน DHL พร้อมบริการโทรหาก่อนส่งของถึงบ้าน ฟรี! ไม่มีค่าใช้จ่าย สำหรับทุกท่านที่โอนเงินชำระค่าสินค้า<br/>
+                (หากเลือกชำระแบบเก็บเงินปลายทาง มีค่าธรรมเนียม 100 บาท)<br/><br/></h2>
+            </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+       
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+    
+    
+
+
+</body>
+</html>

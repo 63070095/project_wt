@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'NasalizationRg-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NasalizationRg-Regular'), url('nasalization rg.woff') format('woff');
+}
+body{
+    font-family: "NasalizationRg-Regular", 'Questrial','Prompt';
+    background-color: black;
+    color: white;
+}
+img {
+    /*max-width: 100%;*/
+    height: auto;
+    cursor: pointer;
+    /*width: 100%;*/
+}
+h1{
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-size: 80px;
+    font-weight: 300;
+}
+h2{
+    font-size: 70px;
+    font-weight: 300;
+}
+p{
+    font-size: 30px;
+    font-family: 'Questrial','Prompt';
+    
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-size: 80px;
+    font-size: 35px;
+    font-family: 'Questrial','Prompt';
+}
+
+.btn-grad {
+        cursor: pointer;
+        background-image: linear-gradient(to right, #0056cc 0%, #871bcc  51%, #3240cc  100%);
+        margin-top: 10px;
+        padding: 10px 55px;
+        text-align: center;
+        background-size: 200% auto;
+        color: rgb(235, 229, 229);            
+        border-radius: 40px;
+        display: inline-block;
+      }
+
+.btn-grad:hover {
+        background-image: linear-gradient(to right, #006bff 0%, #ae20ff  51%, #434eff  100%);
+        color: white;
+        text-decoration: none;
+      }
+.btn-grad2 {
+        font-family: 'Questrial','Prompt';
+        cursor: pointer;
+        background-image: linear-gradient(to right, #0056cc 0%, #871bcc  51%, #3240cc  100%);
+        margin-top: 10px;
+        padding: 5px 65px;
+        text-align: center;
+        background-size: 200% auto;
+        color: rgb(235, 229, 229);            
+        border-radius: 40px;
+        display: inline-block;
+      }
+
+.btn-grad2:hover {
+        background-image: linear-gradient(to right, #006bff 0%, #ae20ff  51%, #434eff  100%);
+        color: white;
+        text-decoration: none;
+      }
+.row{
+    margin-bottom: 8%;
+}
+hr{        
+    color:white;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 65%;
+}
+.col-sm-4{
+    padding: 50px;
+}
