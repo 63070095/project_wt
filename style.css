@@ -23,14 +23,19 @@ body {
 
 .pastelcolor{
     background-image: linear-gradient( 
-70deg, rgba(22, 19, 180, 0.7) 0%,  rgba(141, 60, 247, 0.7) 100%);
+70deg, rgba(21, 118, 197, 0.911) 0%,  rgb(163, 93, 253) 100%);
+transition: 0.5s;
 }
 
+.pastelcolor:hover{
+    background-image: linear-gradient( 
+70deg, rgb(0, 112, 204) 0%,  rgb(106, 59, 167) 100%);
+}
 .content2{
     width: 100%;
     height: auto;
     background-image: linear-gradient( 
-70deg, rgba(22, 19, 180, 0.7) 0%,  rgba(141, 60, 247, 0.7) 100%);
+    70deg, rgba(22, 19, 180, 0.7) 0%,  rgba(141, 60, 247, 0.7) 100%);
     
     text-align: center;
     padding: 10px;
@@ -39,7 +44,7 @@ body {
 
 .content2:hover{
     background-image: linear-gradient( 
-70deg, rgba(40, 172, 233, 0.7) 0%,  rgba(73, 60, 247, 0.7) 100%);
+70deg, rgba(16, 14, 114, 0.7) 0%,  rgba(129, 54, 228, 0.7) 100%);
 }
 
 
@@ -76,8 +81,8 @@ body {
     padding-top: 0.1%;
     padding-bottom: 0.1%;
     margin-top: -0.2%;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
 }
 
 .b-btn{
@@ -88,9 +93,14 @@ body {
     padding-top: 0.6%;
     padding-bottom: 0.5%;
     text-align: center;
-    border: 2px solid grey;
-    color: grey;
+    border: 2px solid rgb(196, 196, 196);
+    color: rgb(196, 196, 196);
     font-weight: 900;
+}
+
+.buy-btn:hover{
+    border: 2px solid white;
+    color: white;
 }
 
 .b-btn:hover{
