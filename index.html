@@ -14,6 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!--ไม่ได้เดี๋ยวลองเปลี่ยนเป็น fixed-top-->
@@ -28,41 +34,148 @@
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="index.html">หน้าแรก</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="about.html">ทำไมต้อง OPHTUS</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="our-glasses.html">สินค้าทั้งหมด</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">สินค้าทั้งหมด</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">ชุมชน</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="contact.html">ติดต่อเรา</a></li>
                 </ul>
                 <!--ทดลอง-->
-                <select class="selectpicker" style="color: white; border: none; background-color: black; width: 14%;">
-                    <option>🏳️THAILAND</option>
-                    <option>VIETNAM</option>
-                    <option>USA</option>
-                    <option>BRAZIL</option>
-                    <option>CAMBODIA</option>
-                    <option>CHINESE</option>
-                    <option>FRANCE</option>
-                    <option>GERMANY</option>
-                    <option>HONG KONG</option>
-                    <option>INDIA</option>
-                    <option>INDONESIA</option>
-                    <option>ITALY</option>
-                    <option>JAPAN</option>
-                    <option>LAOS</option>
-                    <option>MALAYSIA</option>
-                    <option>MYANMAR</option>
-                    <option>PHILIPPINES</option>
-                    <option>PORTUGAL</option>
-                    <option>RUSSIA</option>
-                    <option>SINGAPORE</option>
-                    <option>SOUTH KOREA</option>
-                    <option>SPAIN</option>
-                    <option>TAIWAN</option>
-                    <option>OTHER COUNTRY</option>
-                </select>
-                  
+                <center>
+                        <button class="button button5" type="button" 
+                                id="dropdownMenuButton" 
+                                data-toggle="dropdown"
+                                target="_blank"
+                                style="background: transparent; border:none; color: white;">TH
+                                <img src="flag/thai-icon.png" >
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="main">
+                                SELECT YOUR LOCATION
+                                <div class="form-group has-feedback has-search">
+                                  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                  <input type="text" class="form-control" placeholder="Search for a location" style="background-color: rgb(0, 0, 0); font-size: 14px;">
+                                </div>
+                              </div>
+                            <li class="dropdown-item">
+                                <img src="flag/thailand.png"
+                                width="20" height="20">&nbsp;THAILAND 
+                                <p style="margin-left: auto; float: right; color: gray;">TH</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/vietnam.png" 
+                                width="20" height="20">&nbsp;VIETNAM
+                            <p style="margin-left: auto; float: right; color: gray;">VN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/usa.png" 
+                                width="20" height="20">&nbsp;USA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/brazil.png"
+                                width="20" height="20">&nbsp;BRAZIL
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/cambodia.png"
+                                width="20" height="20">&nbsp;CAMBODIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                                <li class="dropdown-item">
+                            <img src="flag/china.png"
+                                width="20" height="20">&nbsp;CHINESE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/france.png"
+                                width="20" height="20">&nbsp;FRANCE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/germany.png"
+                                width="20" height="20">&nbsp;GERMANY
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/hongkong.png"
+                                width="20" height="20">&nbsp;HONG KONG
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/india.png"
+                                width="20" height="20">&nbsp;INDIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/indonesia.png"
+                                width="20" height="20">&nbsp;INDONESIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/italy.png"
+                                width="20" height="20">&nbsp;ITALY
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/japan.png"
+                                width="20" height="20">&nbsp;JAPAN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/laos.png"
+                                width="20" height="20">&nbsp;LAOS
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/malaysia.png"
+                                width="20" height="20">&nbsp;MALAYSIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/myanmar.png"
+                                width="20" height="20">&nbsp;MYANMAR
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/philippines.png"
+                                width="20" height="20">&nbsp;PHILIPPINES
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/portugal.png"
+                                width="20" height="20">&nbsp;PORTUGAL
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/russia.png"
+                                width="20" height="20">&nbsp;RUSSIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/singapore.png"
+                                width="20" height="20">&nbsp;SINGAPORE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/southkorea.png"
+                                width="20" height="20">&nbsp;SOUTH KOREA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/spain.png"
+                                width="20" height="20">&nbsp;SPAIN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/taiwan.png"
+                                width="20" height="20">&nbsp;TAIWAN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                        </ul>
+                    </div>
+                </center>
                 <!--ทดลอง-->
             </div>
-        </div>
     </nav>
 
 
@@ -83,7 +196,7 @@
 
     <div class="container-fluid">
         <!--ใส่หน้าสินค้าทั้งหมดใน href-->
-        <a href="our-glasses.html">
+        <a href="">
             <div class="row">
                 <div class="content2">
                     <div class="col-md">
@@ -138,7 +251,7 @@
             <center>
                 <!--ใส่ลิ้งไปสินค้าทั้งหมด-->
                 <div class="col-md">
-                    <a href="our-glasses.html"><button type="button" class="btn b-btn"><h3>ALL PRODUCTS</h3></button></a>
+                    <a href="#" target="_blank"><button type="button" class="btn b-btn"><h2>ALL PRODUCTS</h2></button></a>
                 </div>
             </center>
         </div>
@@ -151,7 +264,7 @@
                 <div class="nazal" style="padding-top: 10%; color: black; font-size: 4vw;">bUILT FOR GAMERS</div>
                 <div class="font2" style="color: black; font-size: 1.7vw;">“Ophtus คือแว่นที่ผมใส่เวลาลงสนามแข่งจริง”<br>– มิกกี้ ปองภพ รัตนแสงโชติ</div><br>
                 <div class="font2" style="color: black; font-size: 1.7vw;">เกมเมอร์ไทยระดับโลก ที่ได้ร่วมทีม Dallas Fue<br>สหรัฐอเมริกา</div>
-                <a href="testimonails.html"><button class="b-btn pastelcolor" style="color: white; border: none;">ALL TESTIMONIALS</button></a>
+        <button class="b-btn pastelcolor" style="color: white; border: none;">ALL TESTIMONIALS</button></a>
                 <br><br><br><br><br>
             </div>
             <div class="col-4">
@@ -216,11 +329,7 @@
         <br><br>
         <div class="row" style="padding: 5%;">
             <center>
-            <div class="col-md">
-                <a href="about.html">
-                    <button type="button" class="btn b-btn"><h3>MORE LENS DETAILS</h3></button>
-                </a>
-            </div>
+            <div class="col-md"><button type="button" class="btn b-btn"><h3>MORE LENS DETAILS</h3></button></div>
             </center>
         </div>
     </div>
@@ -262,9 +371,9 @@
                 <div class="col-md-3 footer-block2">
                     <a href="index.html">หน้าหลัก</a><br>
                     <a href="about.html">ทำไมต้อง Ophtus</a><br>
-                    <a href="our-glasses.html">สินค้าทั้งหมด</a><br>
-                    <a href="team_obtus.html">ทีม OPHTUS</a><br>
-                    <a href="wallpaper.html">วอลเปเปอร์</a><br>
+                    <a href="">สินค้าทั้งหมด</a><br>
+                    <a href="">ทีม OPHTUS</a><br>
+                    <a href="">วอลเปเปอร์</a><br>
                     <a href="contact.html">ติดต่อเรา</a><br>
                 </div>
                 <div class="col-md-3">
