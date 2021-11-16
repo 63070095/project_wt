@@ -61,7 +61,7 @@ body{
     position:absolute;
     margin-top: -360px;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
 }
 
 .frame_gramers .logo img{
@@ -73,6 +73,7 @@ body{
     margin-top: 50px;
     width: 350px;
     height: 338px;
+    margin-right: 10%;
 }
 
 .frame_gramers .conten .link{
@@ -131,17 +132,20 @@ body{
     position:absolute;
     color: white;
     animation: facebook 5s infinite;
-    margin-left: -160px;
+    margin-left: -10%;
 
 }
 
 /* -- Esport leyer -- */
 .img_top_esport{
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.img_top_esport img{
+    width: 90%;
+    margin-left: 7%;
+}
+
 .esports{
     width: 100%;
     height: 150px;
@@ -158,7 +162,7 @@ body{
     transition: all 0.1s linear;
 }
 
-.item_people:hover > a > .oph-ts-content{
+.item_people:hover > a > .oph_ts_content{
     background: transparent linear-gradient(90deg, #0055FF 0%, #5626FF 63%, #9A00FF 100%) 0% 0% no-repeat padding-box;
 }
 
@@ -176,10 +180,10 @@ body{
 }
 
 
-.oph-ts-content {
+.oph_ts_content {
     height: 68px;
     padding-left: 70px;
-    width: 50%;
+    width: 80%;
     position: absolute;
     left: 40px;
     border-top-right-radius: 59px;
@@ -192,7 +196,7 @@ body{
     z-index: 1;
 }
 
-.oph-ts-title {
+.oph_ts_title {
     font-size: 16px;
     font-weight: bold;
     font-family: 'OPHTUS-BOLD';
@@ -200,7 +204,7 @@ body{
     padding-bottom: 5px;
 }
 
-.oph-ts-text {
+.oph_ts_text {
     font-size: 14px;
     margin: 0;
 }
