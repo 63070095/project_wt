@@ -16,6 +16,7 @@
     
 </head>
 <body>
+    <!--ไม่ได้เดี๋ยวลองเปลี่ยนเป็น fixed-top-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav" style="background-color: black;">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="index.html"><img src="https://ophtus.com/wp-content/uploads/2017/11/ophtus-logo.png" alt="" style="width: 60%;"></a>
@@ -26,15 +27,158 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="index.html">หน้าแรก</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">ทำไมต้อง OPHTUS</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="about.html">ทำไมต้อง OPHTUS</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">สินค้าทั้งหมด</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">ชุมชน</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="contact.html">ติดต่อเรา</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="">TH</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4 text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ชุมชน
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-black" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li class="nav-item" ><a class="dropdown-item nav-link px-lg-3 py-3 py-lg-4 text-white " href="team_obtus.html">ทีม OPHTUS</a></li>
+                            <li class="nav-item" ><a class="dropdown-item nav-link px-lg-3 py-3 py-lg-4 text-white" href="wallpaper.html">วอลเปเปอร์</a></li>
+                        </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 text-white" href="contact.html">ติดต่อเรา</a></li>
                 </ul>
+                <!--ทดลอง-->
+                <center>
+                        <button class="button button5" type="button" 
+                                id="dropdownMenuButton" 
+                                data-toggle="dropdown"
+                                target="_blank"
+                                style="background: transparent; border:none; color: white;">TH
+                                <img src="flag/thai-icon.png" >
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="main">
+                                SELECT YOUR LOCATION
+                                <div class="form-group has-feedback has-search">
+                                  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                  <input type="text" class="form-control" placeholder="Search for a location" style="background-color: rgb(0, 0, 0); font-size: 14px;">
+                                </div>
+                              </div>
+                            <li class="dropdown-item">
+                                <img src="flag/thailand.png"
+                                width="20" height="20">&nbsp;THAILAND 
+                                <p style="margin-left: auto; float: right; color: gray;">TH</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/vietnam.png" 
+                                width="20" height="20">&nbsp;VIETNAM
+                            <p style="margin-left: auto; float: right; color: gray;">VN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/usa.png" 
+                                width="20" height="20">&nbsp;USA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/brazil.png"
+                                width="20" height="20">&nbsp;BRAZIL
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/cambodia.png"
+                                width="20" height="20">&nbsp;CAMBODIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                                <li class="dropdown-item">
+                            <img src="flag/china.png"
+                                width="20" height="20">&nbsp;CHINESE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/france.png"
+                                width="20" height="20">&nbsp;FRANCE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/germany.png"
+                                width="20" height="20">&nbsp;GERMANY
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/hongkong.png"
+                                width="20" height="20">&nbsp;HONG KONG
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/india.png"
+                                width="20" height="20">&nbsp;INDIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/indonesia.png"
+                                width="20" height="20">&nbsp;INDONESIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/italy.png"
+                                width="20" height="20">&nbsp;ITALY
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/japan.png"
+                                width="20" height="20">&nbsp;JAPAN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/laos.png"
+                                width="20" height="20">&nbsp;LAOS
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/malaysia.png"
+                                width="20" height="20">&nbsp;MALAYSIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/myanmar.png"
+                                width="20" height="20">&nbsp;MYANMAR
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/philippines.png"
+                                width="20" height="20">&nbsp;PHILIPPINES
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/portugal.png"
+                                width="20" height="20">&nbsp;PORTUGAL
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/russia.png"
+                                width="20" height="20">&nbsp;RUSSIA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/singapore.png"
+                                width="20" height="20">&nbsp;SINGAPORE
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/southkorea.png"
+                                width="20" height="20">&nbsp;SOUTH KOREA
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/spain.png"
+                                width="20" height="20">&nbsp;SPAIN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="flag/taiwan.png"
+                                width="20" height="20">&nbsp;TAIWAN
+                                <p style="margin-left: auto; float: right; color: gray;">EN</p>
+                            </li>
+                        </ul>
+                    </div>
+                </center>
+                <!--ทดลอง-->
             </div>
-        </div>
     </nav>
 
     <div class="container-fluid">
@@ -70,26 +214,26 @@
         </div>
     </div>
 
-    <footer style="padding-top: 4%;">
+    <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
                     <img src="pic/ophtus_built-for-gamers.png" alt="" width="90%"><br><br>
                     <p>บริษัท อินคิวบ์ จำกัด
                         ห้องเลขที่ 301 ชั้น 3 อาคารเดอะไลท์เฮ้าส์ เลขที่ 8/299,8/300 ถนนเจริญนคร แขวงคลองต้นไทร เขตคลองสาน กรุงเทพมหานคร 10600</p>
                         <br>
                     <p>© 2017 Ophtus All Rights Reserved</p>
                 </div>
-                <div class="col-sm-3 footer-block2">
+                <div class="col-md-3 footer-block2">
                     <a href="index.html">หน้าหลัก</a><br>
-                    <a href="">ทำไมต้อง Ophtus</a><br>
-                    <a href="">สินค้าทั้งหมด</a><br>
-                    <a href="">ทีม OPHTUS</a><br>
-                    <a href="">วอลเปเปอร์</a><br>
+                    <a href="about.html">ทำไมต้อง Ophtus</a><br>
+                    <a href="our-glasses.html">สินค้าทั้งหมด</a><br>
+                    <a href="team_obtus.html">ทีม OPHTUS</a><br>
+                    <a href="wallpaper.html">วอลเปเปอร์</a><br>
                     <a href="contact.html">ติดต่อเรา</a><br>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
                     <p>Stay Connected:</p>
                     <div class="button-contact">
                         <a href="https://www.facebook.com/ophtus/" target="_blank"><img src="pic/facebook.png" alt="" width="50vw"> &nbsp;</a>
@@ -100,7 +244,7 @@
                     <p>อีเมลติดต่อ แอดมิน และสอบถามทั่วไป:
                         support@ophtus.com</p>
                 </div>
-                <div class="col-sm-1"></div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </footer>
